@@ -9,13 +9,14 @@
 
     {!! Form::model($tasklist, ['route' => 'tasklists.store']) !!}
 <div class="form-group">
-         {!! Form::label('status', 'ステータス:') !!}
-        {!! Form::text('status') !!}
+
+        {!! Form::label('status', 'ステータス') !!}
+        {!! Form::text('status', null, ['class' => 'form-control']) !!}
 </div>
 
 <div class="form-group">
-        {!! Form::label('content', 'タスク:') !!}
-        {!! Form::text('content') !!}
+        {!! Form::label('tasklist', 'タスク:') !!}
+        {!! Form::text('tasklist', null, ['class' => 'form-control']) !!}
 </div>
         {!! Form::submit('投稿',['class' => 'btn btn-primary']) !!}
 
